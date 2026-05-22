@@ -1,0 +1,20 @@
+<h1>Student List</h1>
+<a href="/add/">Add Student</a>
+
+<table border="1">
+<tr>
+  <th>Name</th>
+  <th>Email</th>
+  <th>Course</th>
+  <th>Marks</th>
+</tr>
+
+{% for i in data %}
+<tr>
+  <td>{{ i.name }}</td>
+  <td>{{ i.email }}</td>
+  <td>{{ i.course }}</td>
+  <td>{{ i.marks }}</td>
+</tr>
+{% endfor %}
+</table>
